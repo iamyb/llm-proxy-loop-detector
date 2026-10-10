@@ -136,16 +136,9 @@ Cleanup runs automatically at startup; `./clean-logs.sh` does it manually.
 
 ## Why this exists (real-world context)
 
-This was built and tuned against a specific, recurring failure:
-
-- **Server:** llama.cpp via [llama-swap](https://github.com/mostlygeek/llama-swap)
-  (unified-CUDA image), one GPU
-- **Model:** `Qwen3.8-27B` at `Q6_K` quant (unsloth GGUF)
-- **Client:** VS Code **GitHub Copilot** chat, pointed at the proxy
-
 Qwen3.8-27B occasionally enters a thinking loop mid-reasoning: it locks onto
 one sentence and re-emits it, with only tiny word-level variations, for
-minutes. A real capture from this exact setup:
+minutes. A real capture:
 
 > The model was reasoning about a Docker / `uv sync` build problem and
 > repeated the clause *"but the CMD is using the system Python"* **163

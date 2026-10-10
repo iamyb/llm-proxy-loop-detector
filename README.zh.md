@@ -127,15 +127,8 @@ logs/
 
 ## 为什么做这个（真实背景）
 
-这个工具是针对一个反复出现的真实故障打磨出来的：
-
-- **服务器**：llama.cpp（通过 [llama-swap](https://github.com/mostlygeek/llama-swap)
-  unified-CUDA 镜像），单 GPU
-- **模型**：`Qwen3.8-27B`，`Q6_K` 量化（unsloth GGUF）
-- **客户端**：VS Code **GitHub Copilot** 聊天，指向本代理
-
 Qwen3.8-27B 偶尔会在推理中途陷入思考死循环：锁定一句话反复输出，
-每次只有极小的措辞变化，一持续就是几分钟。来自这套环境的真实记录：
+每次只有极小的措辞变化，一持续就是几分钟。一条真实记录：
 
 > 模型在推理一个 Docker / `uv sync` 构建问题时，把
 > *"but the CMD is using the system Python"* 这一句**连续重复了 163 次**。
