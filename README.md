@@ -21,6 +21,33 @@ LLM client ──> proxy:9293 ──> LLM server:8080
                  └─ cuts the stream on trigger (or observe-only mode)
 ```
 
+## Why this exists (real-world context)
+
+This was built and tuned against a specific, recurring failure:
+
+- **Server:** llama.cpp via [llama-swap](https://github.com/mostlygeek/llama-swap)
+  (unified-CUDA image), one GPU
+- **Model:** `Qwen3.8-27B` at `Q6_K` quant (unsloth GGUF)
+- **Client:** VS Code **GitHub Copilot** chat, pointed at the proxy
+
+Qwen3.8-27B occasionally enters a thinking loop mid-reasoning: it locks onto
+one sentence and re-emits it, with only tiny word-level variations, for
+minutes. A real capture from this exact setup:
+
+> The model was reasoning about a Docker / `uv sync` build problem and
+> repeated the clause *"but the CMD is using the system Python"* **163
+> times** in a row. The stream ran **254 s** and grew to **7 MB** before the
+> proxy cut it (`unique_ratio=0.32`, well under the 0.5 threshold). Without
+> the cut, the client would have waited ~4 minutes for a useless answer.
+
+The loop is *near*-repetition, not an exact copy — the model paraphrases
+slightly each pass — which is why a statistical n-gram-uniqueness detector
+is used instead of an exact-match check (see [How loop detection works](#how-loop-detection-works)).
+
+This is a known, widely-reported issue — see the
+[Reddit search: qwen3.8 loop](https://www.reddit.com/search/?q=qwen3.8+loop)
+for many more reports and workarounds.
+
 ## Features
 
 - **Full passthrough** — all headers (incl. `Authorization`) forwarded; SSE
