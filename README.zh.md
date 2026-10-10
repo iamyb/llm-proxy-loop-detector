@@ -19,31 +19,6 @@ LLM 客户端 ──> proxy:9293 ──> LLM 服务器:8080
                  └─ 触发时切断流（或仅观察模式）
 ```
 
-## 为什么做这个（真实背景）
-
-这个工具是针对一个反复出现的真实故障打磨出来的：
-
-- **服务器**：llama.cpp（通过 [llama-swap](https://github.com/mostlygeek/llama-swap)
-  unified-CUDA 镜像），单 GPU
-- **模型**：`Qwen3.8-27B`，`Q6_K` 量化（unsloth GGUF）
-- **客户端**：VS Code **GitHub Copilot** 聊天，指向本代理
-
-Qwen3.8-27B 偶尔会在推理中途陷入思考死循环：锁定一句话反复输出，
-每次只有极小的措辞变化，一持续就是几分钟。来自这套环境的真实记录：
-
-> 模型在推理一个 Docker / `uv sync` 构建问题时，把
-> *"but the CMD is using the system Python"* 这一句**连续重复了 163 次**。
-> 流跑了 **254 秒**、涨到 **7 MB** 才被代理切断
-> （`unique_ratio=0.32`，远低于 0.5 阈值）。没有切断的话，客户端要白等
-> 约 4 分钟才拿到一个没用的答案。
-
-这种循环是**近似重复**而非精确复制——模型每轮都会略微改写措辞——
-所以这里用统计式的 n-gram 唯一率检测，而不是精确匹配
-（见[循环检测原理](#循环检测原理)）。
-
-这是社区广泛报告过的已知问题——更多案例和规避方法见
-[Reddit 搜索：qwen3.8 loop](https://www.reddit.com/search/?q=qwen3.8+loop)。
-
 ## 特性
 
 - **完全透传** —— 所有 header（含 `Authorization`）原样转发；SSE 流
@@ -149,6 +124,30 @@ logs/
   切断尾部的合成数据单元测试（确定性、无网络）
 - `test_replay.py` —— 用生产代码路径回放录制的 `.sse` 文件
   （默认 fixture：`examples/sample.sse`，含刻意构造的循环）
+
+## 为什么做这个（真实背景）
+
+这个工具是针对一个反复出现的真实故障打磨出来的：
+
+- **服务器**：llama.cpp（通过 [llama-swap](https://github.com/mostlygeek/llama-swap)
+  unified-CUDA 镜像），单 GPU
+- **模型**：`Qwen3.8-27B`，`Q6_K` 量化（unsloth GGUF）
+- **客户端**：VS Code **GitHub Copilot** 聊天，指向本代理
+
+Qwen3.8-27B 偶尔会在推理中途陷入思考死循环：锁定一句话反复输出，
+每次只有极小的措辞变化，一持续就是几分钟。来自这套环境的真实记录：
+
+> 模型在推理一个 Docker / `uv sync` 构建问题时，把
+> *"but the CMD is using the system Python"* 这一句**连续重复了 163 次**。
+> 流跑了 **254 秒**、涨到 **7 MB** 才被代理切断
+> （`unique_ratio=0.32`，远低于 0.5 阈值）。没有切断的话，客户端要白等
+> 约 4 分钟才拿到一个没用的答案。
+
+这种循环是**近似重复**而非精确复制——模型每轮都会略微改写措辞——
+所以这里用上面那种统计式的 n-gram 唯一率检测，而不是精确匹配。
+
+这是社区广泛报告过的已知问题——更多案例和规避方法见
+[Reddit 搜索：qwen3.8 loop](https://www.reddit.com/search/?q=qwen3.8+loop)。
 
 ## 许可
 
