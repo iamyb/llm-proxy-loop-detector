@@ -124,7 +124,6 @@ logs/
   切断尾部的合成数据单元测试（确定性、无网络）
 - `test_replay.py` —— 用生产代码路径回放录制的 `.sse` 文件
   （默认 fixture：`examples/sample.sse`，含刻意构造的循环）
-- `bench_extractor.py` —— SSE 解析器吞吐基准测试
 
 ## 许可
 
