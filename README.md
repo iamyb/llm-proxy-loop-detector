@@ -1,5 +1,7 @@
 # llm-proxy-loop-detector
 
+> English | [中文文档](README.zh.md)
+
 A tiny SSE tee proxy with **real-time thinking-loop detection** for local
 LLM servers (llama.cpp / llama-swap / vLLM / anything with an
 OpenAI-compatible API).
