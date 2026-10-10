@@ -10,8 +10,10 @@ RUN pip install --no-cache-dir \
 COPY proxy.py test_regression.py test_replay.py bench_extractor.py /app/
 COPY examples/ /app/examples/
 
-# logs are expected on a volume at /app/logs (see docker-compose.yml)
-VOLUME ["/app/logs"]
+# NOTE: no VOLUME declaration here — a VOLUME /app/logs would make Docker
+# attach a named volume whenever the compose file bind-mounts the parent
+# /app instead of /app/logs exactly, silently hiding the host logs dir.
+# Mounting is left to docker-compose.yml.
 
 EXPOSE 9293
 
