@@ -108,17 +108,23 @@ logs/
 ├── proxy.log              # one JSON line per request (status, bytes,
 │                          # duration, reasoning_chars, loop_triggered, hit)
 ├── proxy.log.1            # rotated previous log
-└── {session_id}/          # 12-hex session key (sha1 of first 2 messages)
+└── 20261009T155148Z_6a72e356/   # {first-seen timestamp}_{12-hex session key}
     ├── 20261009T155148Z_6a72e356.req.json   # request body
     └── 20261009T155148Z_6a72e356.sse        # full SSE stream (+ cut tail)
 ```
+
+The session key is the first 12 hex chars of the sha1 of the first two
+messages; the timestamp in the directory name is when the session was first
+seen. After a restart the proxy reuses the existing directory (matched by
+the `_key` suffix; legacy plain `{key}` dirs are recognized too), so all
+turns of a session stay in one place.
 
 Cleanup runs automatically at startup; `./clean-logs.sh` does it manually.
 
 ## Testing
 
 ```bash
-./run-tests.sh            # 22 regression tests, inside the container
+./run-tests.sh            # 27 regression tests, inside the container
 ./run-tests.sh -v         # verbose
 ```
 

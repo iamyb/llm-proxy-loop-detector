@@ -204,6 +204,47 @@ class TestSessionKey(unittest.TestCase):
 
 # ---------------------------------------------------------------- logging
 
+class TestSessionDir(unittest.TestCase):
+    def setUp(self):
+        self.tmp = tempfile.mkdtemp(prefix="proxy_sessdir_")
+        mod.ARGS = make_args(self.tmp)
+        mod._SESS_CACHE.clear()
+
+    def tearDown(self):
+        shutil.rmtree(self.tmp, ignore_errors=True)
+        mod._SESS_CACHE.clear()
+
+    def test_name_has_timestamp_and_key(self):
+        d = mod.session_dir("abc123def456")
+        name = os.path.basename(d)
+        self.assertTrue(name.endswith("_abc123def456"))
+        ts = name.rsplit("_", 1)[0]
+        self.assertRegex(ts, r"^\d{8}T\d{6}Z$")
+        self.assertTrue(os.path.isdir(d))
+
+    def test_same_session_same_dir(self):
+        d1 = mod.session_dir("abc123def456")
+        d2 = mod.session_dir("abc123def456")
+        self.assertEqual(d1, d2)
+
+    def test_reuse_after_restart(self):
+        d1 = mod.session_dir("abc123def456")
+        mod._SESS_CACHE.clear()          # simulate process restart
+        d2 = mod.session_dir("abc123def456")
+        self.assertEqual(d1, d2)         # found via _key suffix scan
+
+    def test_reuse_legacy_dir(self):
+        # dirs created before the timestamp naming: plain {key}
+        legacy = os.path.join(self.tmp, "abc123def456")
+        os.makedirs(legacy)
+        d = mod.session_dir("abc123def456")
+        self.assertEqual(d, legacy)
+
+    def test_nosession_plain_dir(self):
+        d = mod.session_dir("nosession")
+        self.assertEqual(os.path.basename(d), "nosession")
+
+
 class TestLogging(unittest.TestCase):
     def setUp(self):
         self.tmp = tempfile.mkdtemp(prefix="proxy_test_")
@@ -226,8 +267,9 @@ class TestLogging(unittest.TestCase):
     def test_save_request_pretty_and_cjk(self):
         body = json.dumps({"messages": [
             {"role": "user", "content": "你好 world"}]}).encode()
-        mod.save_request("req1", "sess1", "v1/chat/completions", body)
-        p = os.path.join(self.tmp, "sess1", "req1.req.json")
+        d = mod.session_dir("sess1")
+        mod.save_request("req1", d, "v1/chat/completions", body)
+        p = os.path.join(d, "req1.req.json")
         self.assertTrue(os.path.exists(p))
         with open(p, "rb") as f:
             raw = f.read()
@@ -237,8 +279,9 @@ class TestLogging(unittest.TestCase):
         self.assertIn("你好".encode(), raw)
 
     def test_save_request_fallback_on_garbage(self):
-        mod.save_request("req2", "sess2", "p", b"<<<not json>>>")
-        p = os.path.join(self.tmp, "sess2", "req2.req.json")
+        d = mod.session_dir("sess2")
+        mod.save_request("req2", d, "p", b"<<<not json>>>")
+        p = os.path.join(d, "req2.req.json")
         with open(p, "rb") as f:
             self.assertEqual(f.read(), b"<<<not json>>>")
 

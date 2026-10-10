@@ -195,10 +195,41 @@ def log_summary(rec: dict):
         f.write(orjson.dumps(rec) + b"\n")
 
 
-def save_request(req_id: str, sess: str, path: str, body: bytes):
-    d = os.path.join(ARGS.logdir, sess)
+_SESS_CACHE = {}
+
+
+def session_dir(sess: str) -> str:
+    """On-disk session directory: {first_seen_ts}_{key}, created on first
+    use. The timestamp makes sessions sortable by age at a glance; the
+    key suffix lets us find the same session again after a restart (scan
+    for an existing dir ending in _{key}), so all turns of a session stay
+    in one directory. 'nosession' stays a plain, untimestamped dir."""
+    if sess == "nosession":
+        d = os.path.join(ARGS.logdir, "nosession")
+        os.makedirs(d, exist_ok=True)
+        return d
+    cached = _SESS_CACHE.get(sess)
+    if cached:
+        return cached
+    try:
+        for name in os.listdir(ARGS.logdir):
+            # new format: {ts}_{key}; legacy format (pre-timestamp): {key}
+            if name.endswith("_" + sess) or name == sess:
+                d = os.path.join(ARGS.logdir, name)
+                if os.path.isdir(d):
+                    _SESS_CACHE[sess] = d
+                    return d
+    except OSError:
+        pass
+    ts = datetime.now(timezone.utc).strftime("%Y%m%dT%H%M%SZ")
+    d = os.path.join(ARGS.logdir, f"{ts}_{sess}")
     os.makedirs(d, exist_ok=True)
-    p = os.path.join(d, f"{req_id}.req.json")
+    _SESS_CACHE[sess] = d
+    return d
+
+
+def save_request(req_id: str, sess_dir: str, path: str, body: bytes):
+    p = os.path.join(sess_dir, f"{req_id}.req.json")
     try:
         obj = orjson.loads(body)
         with open(p, "wb") as f:
@@ -297,8 +328,9 @@ async def proxy(path: str, request: Request):
 
     is_chat = path.endswith("/chat/completions") or path.endswith("/completions")
     sess = session_key(body) if is_chat else "nosession"
+    sess_dir = await asyncio.to_thread(session_dir, sess)
     # offload the (potentially large) request-body write off the event loop
-    await asyncio.to_thread(save_request, req_id, sess, path, body)
+    await asyncio.to_thread(save_request, req_id, sess_dir, path, body)
 
     t0 = time.time()
     up_req = client.build_request(request.method, url, content=body, headers=headers)
@@ -336,7 +368,7 @@ async def proxy(path: str, request: Request):
         try:
             # open inside try: finally closes the handle even if gen() is
             # never iterated or cancelled early
-            sse_file = open(os.path.join(ARGS.logdir, sess, f"{req_id}.sse"), "wb")
+            sse_file = open(os.path.join(sess_dir, f"{req_id}.sse"), "wb")
             async for chunk in upstream.aiter_bytes():
                 sse_file.write(chunk)
                 n_bytes += len(chunk)
