@@ -19,6 +19,7 @@ services:
       --listen 0.0.0.0:9293
       --upstream http://host.docker.internal:8080
       --logdir /app/logs
-      --warmup-chars 2000
+      --warmup-chars 6000
+      --ratio 0.4
     extra_hosts:
       - "host.docker.internal:host-gateway"

@@ -153,9 +153,21 @@ class SSEReasoningExtractor:
 
 def build_cut_tail(det: "LoopDetector", meta: dict) -> bytes:
     """Build the protocol-valid tail emitted when a loop is cut:
-    one SSE comment line (ignored by clients), a finish_reason chunk
-    (id/model/created from meta, recorded during the same parse), and
-    [DONE]. The client sees a normal completion."""
+    one SSE comment line (ignored by clients), a content chunk carrying a
+    visible notice (so clients that got no answer text don't show
+    "no response"), a finish_reason chunk (id/model/created from meta,
+    recorded during the same parse), and [DONE]. The client sees a normal
+    completion."""
+    notice = ("[llm-proxy] response cut: model entered a repetition loop "
+              f"({det.hit})")
+    notice_chunk = {
+        "id": meta.get("id"),
+        "model": meta.get("model"),
+        "created": meta.get("created"),
+        "choices": [{"finish_reason": None, "index": 0,
+                     "delta": {"content": notice}}],
+        "object": "chat.completion.chunk",
+    }
     closing = {
         "id": meta.get("id"),
         "model": meta.get("model"),
@@ -164,6 +176,7 @@ def build_cut_tail(det: "LoopDetector", meta: dict) -> bytes:
         "object": "chat.completion.chunk",
     }
     return (f": loop detected: {det.hit}\n\n"
+            f"data: {orjson.dumps(notice_chunk).decode()}\n\n"
             f"data: {orjson.dumps(closing).decode()}\n\n"
             f"data: [DONE]\n\n").encode()
 

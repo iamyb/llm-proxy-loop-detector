@@ -357,7 +357,11 @@ class TestCutClosingChunk(unittest.TestCase):
         # the finish_reason chunk must parse and be well-formed
         data_lines = [l[5:].strip() for l in lines if l.startswith("data:")]
         self.assertEqual(data_lines[-1], "[DONE]")
-        chunk = json.loads(data_lines[0])
+        # data_lines: [notice_chunk, closing_chunk, "[DONE]"]
+        notice = json.loads(data_lines[0])
+        self.assertIsNone(notice["choices"][0]["finish_reason"])
+        self.assertIn("loop", notice["choices"][0]["delta"]["content"])
+        chunk = json.loads(data_lines[1])
         self.assertEqual(chunk["choices"][0]["finish_reason"], "stop")
         self.assertEqual(chunk["object"], "chat.completion.chunk")
         self.assertIn("id", chunk)
