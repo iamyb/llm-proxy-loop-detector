@@ -293,11 +293,10 @@ class TestCleanup(unittest.TestCase):
 # ---------------------------------------------------------------- cut tail
 
 class TestCutClosingChunk(unittest.TestCase):
-    """Mirror the exact tail-building code in gen() and assert the result is
+    """Call the production build_cut_tail() and assert the result is
     protocol-valid: a comment line, a finish_reason chunk, and [DONE]."""
 
     def test_tail_is_valid(self):
-        import orjson
         det = LoopDetector(warmup=200, window=3000, n=18, ratio=0.5, cut=True)
         ex = SSEReasoningExtractor()
         phrase = "repeat repeat repeat repeat repeat repeat repeat repeat "
@@ -306,17 +305,9 @@ class TestCutClosingChunk(unittest.TestCase):
                 break
         self.assertTrue(det.triggered)
 
-        meta = ex.meta or {"id": "id-x", "model": "m", "created": 1}
-        closing = {
-            "id": meta.get("id"),
-            "model": meta.get("model"),
-            "created": meta.get("created"),
-            "choices": [{"finish_reason": "stop", "index": 0, "delta": {}}],
-            "object": "chat.completion.chunk",
-        }
-        tail = (f": loop detected: {det.hit}\n\n"
-                f"data: {orjson.dumps(closing).decode()}\n\n"
-                f"data: [DONE]\n\n").encode()
+        # feed one chunk so the extractor records meta, like the live path
+        ex.feed(sse_chunk("x", rid="id-x", model="m", created=1))
+        tail = mod.build_cut_tail(det, ex.meta)
 
         lines = tail.decode().split("\n")
         self.assertTrue(lines[0].startswith(": loop detected:"))

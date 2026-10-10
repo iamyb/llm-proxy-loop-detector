@@ -151,6 +151,23 @@ class SSEReasoningExtractor:
         return "".join(out)
 
 
+def build_cut_tail(det: "LoopDetector", meta: dict) -> bytes:
+    """Build the protocol-valid tail emitted when a loop is cut:
+    one SSE comment line (ignored by clients), a finish_reason chunk
+    (id/model/created from meta, recorded during the same parse), and
+    [DONE]. The client sees a normal completion."""
+    closing = {
+        "id": meta.get("id"),
+        "model": meta.get("model"),
+        "created": meta.get("created"),
+        "choices": [{"finish_reason": "stop", "index": 0, "delta": {}}],
+        "object": "chat.completion.chunk",
+    }
+    return (f": loop detected: {det.hit}\n\n"
+            f"data: {orjson.dumps(closing).decode()}\n\n"
+            f"data: [DONE]\n\n").encode()
+
+
 # ---------------------------------------------------------------- session id
 
 def session_key(body: bytes) -> str:
@@ -332,22 +349,7 @@ async def proxy(path: str, request: Request):
                 if det is not None:
                     text = extractor.feed(chunk)
                     if text and det.feed(text):
-                        # emit one SSE comment line (ignored by clients),
-                        # then close the stream like a normal completion:
-                        # finish_reason chunk + [DONE]. id/model/created come
-                        # from extractor.meta (recorded during the same parse)
-                        meta = extractor.meta
-                        closing = {
-                            "id": meta.get("id"),
-                            "model": meta.get("model"),
-                            "created": meta.get("created"),
-                            "choices": [{"finish_reason": "stop",
-                                         "index": 0, "delta": {}}],
-                            "object": "chat.completion.chunk",
-                        }
-                        tail = (f": loop detected: {det.hit}\n\n"
-                                f"data: {orjson.dumps(closing).decode()}\n\n"
-                                f"data: [DONE]\n\n").encode()
+                        tail = build_cut_tail(det, extractor.meta)
                         sse_file.write(tail)
                         n_bytes += len(tail)
                         yield tail
