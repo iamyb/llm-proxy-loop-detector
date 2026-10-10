@@ -1,0 +1,352 @@
+data: {"id": "chatcmpl-sample0001", "model": "sample-model", "created": 1750000000, "object": "chat.completion.chunk", "choices": [{"index": 0, "delta": {"reasoning_content": "Step 0: I am now working on parsing aspe"}, "finish_reason": null}]}
+
+data: {"id": "chatcmpl-sample0001", "model": "sample-model", "created": 1750000000, "object": "chat.completion.chunk", "choices": [{"index": 0, "delta": {"reasoning_content": "ct number 0, considering edge case 0 and"}, "finish_reason": null}]}
+
+data: {"id": "chatcmpl-sample0001", "model": "sample-model", "created": 1750000000, "object": "chat.completion.chunk", "choices": [{"index": 0, "delta": {"reasoning_content": " its interaction with component 0, which"}, "finish_reason": null}]}
+
+data: {"id": "chatcmpl-sample0001", "model": "sample-model", "created": 1750000000, "object": "chat.completion.chunk", "choices": [{"index": 0, "delta": {"reasoning_content": " differs from the previous step in detai"}, "finish_reason": null}]}
+
+data: {"id": "chatcmpl-sample0001", "model": "sample-model", "created": 1750000000, "object": "chat.completion.chunk", "choices": [{"index": 0, "delta": {"reasoning_content": "l 0.\nStep 1: I am now working on plannin"}, "finish_reason": null}]}
+
+data: {"id": "chatcmpl-sample0001", "model": "sample-model", "created": 1750000000, "object": "chat.completion.chunk", "choices": [{"index": 0, "delta": {"reasoning_content": "g aspect number 1, considering edge case"}, "finish_reason": null}]}
+
+data: {"id": "chatcmpl-sample0001", "model": "sample-model", "created": 1750000000, "object": "chat.completion.chunk", "choices": [{"index": 0, "delta": {"reasoning_content": " 7 and its interaction with component 1,"}, "finish_reason": null}]}
+
+data: {"id": "chatcmpl-sample0001", "model": "sample-model", "created": 1750000000, "object": "chat.completion.chunk", "choices": [{"index": 0, "delta": {"reasoning_content": " which differs from the previous step in"}, "finish_reason": null}]}
+
+data: {"id": "chatcmpl-sample0001", "model": "sample-model", "created": 1750000000, "object": "chat.completion.chunk", "choices": [{"index": 0, "delta": {"reasoning_content": " detail 3.\nStep 2: I am now working on t"}, "finish_reason": null}]}
+
+data: {"id": "chatcmpl-sample0001", "model": "sample-model", "created": 1750000000, "object": "chat.completion.chunk", "choices": [{"index": 0, "delta": {"reasoning_content": "esting aspect number 2, considering edge"}, "finish_reason": null}]}
+
+data: {"id": "chatcmpl-sample0001", "model": "sample-model", "created": 1750000000, "object": "chat.completion.chunk", "choices": [{"index": 0, "delta": {"reasoning_content": " case 14 and its interaction with compon"}, "finish_reason": null}]}
+
+data: {"id": "chatcmpl-sample0001", "model": "sample-model", "created": 1750000000, "object": "chat.completion.chunk", "choices": [{"index": 0, "delta": {"reasoning_content": "ent 2, which differs from the previous s"}, "finish_reason": null}]}
+
+data: {"id": "chatcmpl-sample0001", "model": "sample-model", "created": 1750000000, "object": "chat.completion.chunk", "choices": [{"index": 0, "delta": {"reasoning_content": "tep in detail 6.\nStep 3: I am now workin"}, "finish_reason": null}]}
+
+data: {"id": "chatcmpl-sample0001", "model": "sample-model", "created": 1750000000, "object": "chat.completion.chunk", "choices": [{"index": 0, "delta": {"reasoning_content": "g on refactoring aspect number 3, consid"}, "finish_reason": null}]}
+
+data: {"id": "chatcmpl-sample0001", "model": "sample-model", "created": 1750000000, "object": "chat.completion.chunk", "choices": [{"index": 0, "delta": {"reasoning_content": "ering edge case 21 and its interaction w"}, "finish_reason": null}]}
+
+data: {"id": "chatcmpl-sample0001", "model": "sample-model", "created": 1750000000, "object": "chat.completion.chunk", "choices": [{"index": 0, "delta": {"reasoning_content": "ith component 3, which differs from the "}, "finish_reason": null}]}
+
+data: {"id": "chatcmpl-sample0001", "model": "sample-model", "created": 1750000000, "object": "chat.completion.chunk", "choices": [{"index": 0, "delta": {"reasoning_content": "previous step in detail 9.\nStep 4: I am "}, "finish_reason": null}]}
+
+data: {"id": "chatcmpl-sample0001", "model": "sample-model", "created": 1750000000, "object": "chat.completion.chunk", "choices": [{"index": 0, "delta": {"reasoning_content": "now working on profiling aspect number 4"}, "finish_reason": null}]}
+
+data: {"id": "chatcmpl-sample0001", "model": "sample-model", "created": 1750000000, "object": "chat.completion.chunk", "choices": [{"index": 0, "delta": {"reasoning_content": ", considering edge case 28 and its inter"}, "finish_reason": null}]}
+
+data: {"id": "chatcmpl-sample0001", "model": "sample-model", "created": 1750000000, "object": "chat.completion.chunk", "choices": [{"index": 0, "delta": {"reasoning_content": "action with component 4, which differs f"}, "finish_reason": null}]}
+
+data: {"id": "chatcmpl-sample0001", "model": "sample-model", "created": 1750000000, "object": "chat.completion.chunk", "choices": [{"index": 0, "delta": {"reasoning_content": "rom the previous step in detail 12.\nStep"}, "finish_reason": null}]}
+
+data: {"id": "chatcmpl-sample0001", "model": "sample-model", "created": 1750000000, "object": "chat.completion.chunk", "choices": [{"index": 0, "delta": {"reasoning_content": " 5: I am now working on caching aspect n"}, "finish_reason": null}]}
+
+data: {"id": "chatcmpl-sample0001", "model": "sample-model", "created": 1750000000, "object": "chat.completion.chunk", "choices": [{"index": 0, "delta": {"reasoning_content": "umber 5, considering edge case 35 and it"}, "finish_reason": null}]}
+
+data: {"id": "chatcmpl-sample0001", "model": "sample-model", "created": 1750000000, "object": "chat.completion.chunk", "choices": [{"index": 0, "delta": {"reasoning_content": "s interaction with component 5, which di"}, "finish_reason": null}]}
+
+data: {"id": "chatcmpl-sample0001", "model": "sample-model", "created": 1750000000, "object": "chat.completion.chunk", "choices": [{"index": 0, "delta": {"reasoning_content": "ffers from the previous step in detail 1"}, "finish_reason": null}]}
+
+data: {"id": "chatcmpl-sample0001", "model": "sample-model", "created": 1750000000, "object": "chat.completion.chunk", "choices": [{"index": 0, "delta": {"reasoning_content": "5.\nStep 6: I am now working on logging a"}, "finish_reason": null}]}
+
+data: {"id": "chatcmpl-sample0001", "model": "sample-model", "created": 1750000000, "object": "chat.completion.chunk", "choices": [{"index": 0, "delta": {"reasoning_content": "spect number 6, considering edge case 42"}, "finish_reason": null}]}
+
+data: {"id": "chatcmpl-sample0001", "model": "sample-model", "created": 1750000000, "object": "chat.completion.chunk", "choices": [{"index": 0, "delta": {"reasoning_content": " and its interaction with component 6, w"}, "finish_reason": null}]}
+
+data: {"id": "chatcmpl-sample0001", "model": "sample-model", "created": 1750000000, "object": "chat.completion.chunk", "choices": [{"index": 0, "delta": {"reasoning_content": "hich differs from the previous step in d"}, "finish_reason": null}]}
+
+data: {"id": "chatcmpl-sample0001", "model": "sample-model", "created": 1750000000, "object": "chat.completion.chunk", "choices": [{"index": 0, "delta": {"reasoning_content": "etail 18.\nStep 7: I am now working on ro"}, "finish_reason": null}]}
+
+data: {"id": "chatcmpl-sample0001", "model": "sample-model", "created": 1750000000, "object": "chat.completion.chunk", "choices": [{"index": 0, "delta": {"reasoning_content": "uting aspect number 7, considering edge "}, "finish_reason": null}]}
+
+data: {"id": "chatcmpl-sample0001", "model": "sample-model", "created": 1750000000, "object": "chat.completion.chunk", "choices": [{"index": 0, "delta": {"reasoning_content": "case 49 and its interaction with compone"}, "finish_reason": null}]}
+
+data: {"id": "chatcmpl-sample0001", "model": "sample-model", "created": 1750000000, "object": "chat.completion.chunk", "choices": [{"index": 0, "delta": {"reasoning_content": "nt 7, which differs from the previous st"}, "finish_reason": null}]}
+
+data: {"id": "chatcmpl-sample0001", "model": "sample-model", "created": 1750000000, "object": "chat.completion.chunk", "choices": [{"index": 0, "delta": {"reasoning_content": "ep in detail 21.\nStep 8: I am now workin"}, "finish_reason": null}]}
+
+data: {"id": "chatcmpl-sample0001", "model": "sample-model", "created": 1750000000, "object": "chat.completion.chunk", "choices": [{"index": 0, "delta": {"reasoning_content": "g on parsing aspect number 8, considerin"}, "finish_reason": null}]}
+
+data: {"id": "chatcmpl-sample0001", "model": "sample-model", "created": 1750000000, "object": "chat.completion.chunk", "choices": [{"index": 0, "delta": {"reasoning_content": "g edge case 56 and its interaction with "}, "finish_reason": null}]}
+
+data: {"id": "chatcmpl-sample0001", "model": "sample-model", "created": 1750000000, "object": "chat.completion.chunk", "choices": [{"index": 0, "delta": {"reasoning_content": "component 8, which differs from the prev"}, "finish_reason": null}]}
+
+data: {"id": "chatcmpl-sample0001", "model": "sample-model", "created": 1750000000, "object": "chat.completion.chunk", "choices": [{"index": 0, "delta": {"reasoning_content": "ious step in detail 24.\nStep 9: I am now"}, "finish_reason": null}]}
+
+data: {"id": "chatcmpl-sample0001", "model": "sample-model", "created": 1750000000, "object": "chat.completion.chunk", "choices": [{"index": 0, "delta": {"reasoning_content": " working on streaming aspect number 9, c"}, "finish_reason": null}]}
+
+data: {"id": "chatcmpl-sample0001", "model": "sample-model", "created": 1750000000, "object": "chat.completion.chunk", "choices": [{"index": 0, "delta": {"reasoning_content": "onsidering edge case 63 and its interact"}, "finish_reason": null}]}
+
+data: {"id": "chatcmpl-sample0001", "model": "sample-model", "created": 1750000000, "object": "chat.completion.chunk", "choices": [{"index": 0, "delta": {"reasoning_content": "ion with component 9, which differs from"}, "finish_reason": null}]}
+
+data: {"id": "chatcmpl-sample0001", "model": "sample-model", "created": 1750000000, "object": "chat.completion.chunk", "choices": [{"index": 0, "delta": {"reasoning_content": " the previous step in detail 27.\nStep 10"}, "finish_reason": null}]}
+
+data: {"id": "chatcmpl-sample0001", "model": "sample-model", "created": 1750000000, "object": "chat.completion.chunk", "choices": [{"index": 0, "delta": {"reasoning_content": ": I am now working on parsing aspect num"}, "finish_reason": null}]}
+
+data: {"id": "chatcmpl-sample0001", "model": "sample-model", "created": 1750000000, "object": "chat.completion.chunk", "choices": [{"index": 0, "delta": {"reasoning_content": "ber 10, considering edge case 70 and its"}, "finish_reason": null}]}
+
+data: {"id": "chatcmpl-sample0001", "model": "sample-model", "created": 1750000000, "object": "chat.completion.chunk", "choices": [{"index": 0, "delta": {"reasoning_content": " interaction with component 10, which di"}, "finish_reason": null}]}
+
+data: {"id": "chatcmpl-sample0001", "model": "sample-model", "created": 1750000000, "object": "chat.completion.chunk", "choices": [{"index": 0, "delta": {"reasoning_content": "ffers from the previous step in detail 3"}, "finish_reason": null}]}
+
+data: {"id": "chatcmpl-sample0001", "model": "sample-model", "created": 1750000000, "object": "chat.completion.chunk", "choices": [{"index": 0, "delta": {"reasoning_content": "0.\nStep 11: I am now working on planning"}, "finish_reason": null}]}
+
+data: {"id": "chatcmpl-sample0001", "model": "sample-model", "created": 1750000000, "object": "chat.completion.chunk", "choices": [{"index": 0, "delta": {"reasoning_content": " aspect number 11, considering edge case"}, "finish_reason": null}]}
+
+data: {"id": "chatcmpl-sample0001", "model": "sample-model", "created": 1750000000, "object": "chat.completion.chunk", "choices": [{"index": 0, "delta": {"reasoning_content": " 77 and its interaction with component 1"}, "finish_reason": null}]}
+
+data: {"id": "chatcmpl-sample0001", "model": "sample-model", "created": 1750000000, "object": "chat.completion.chunk", "choices": [{"index": 0, "delta": {"reasoning_content": "1, which differs from the previous step "}, "finish_reason": null}]}
+
+data: {"id": "chatcmpl-sample0001", "model": "sample-model", "created": 1750000000, "object": "chat.completion.chunk", "choices": [{"index": 0, "delta": {"reasoning_content": "in detail 33.\nStep 12: I am now working "}, "finish_reason": null}]}
+
+data: {"id": "chatcmpl-sample0001", "model": "sample-model", "created": 1750000000, "object": "chat.completion.chunk", "choices": [{"index": 0, "delta": {"reasoning_content": "on testing aspect number 12, considering"}, "finish_reason": null}]}
+
+data: {"id": "chatcmpl-sample0001", "model": "sample-model", "created": 1750000000, "object": "chat.completion.chunk", "choices": [{"index": 0, "delta": {"reasoning_content": " edge case 84 and its interaction with c"}, "finish_reason": null}]}
+
+data: {"id": "chatcmpl-sample0001", "model": "sample-model", "created": 1750000000, "object": "chat.completion.chunk", "choices": [{"index": 0, "delta": {"reasoning_content": "omponent 12, which differs from the prev"}, "finish_reason": null}]}
+
+data: {"id": "chatcmpl-sample0001", "model": "sample-model", "created": 1750000000, "object": "chat.completion.chunk", "choices": [{"index": 0, "delta": {"reasoning_content": "ious step in detail 36.\nStep 13: I am no"}, "finish_reason": null}]}
+
+data: {"id": "chatcmpl-sample0001", "model": "sample-model", "created": 1750000000, "object": "chat.completion.chunk", "choices": [{"index": 0, "delta": {"reasoning_content": "w working on refactoring aspect number 1"}, "finish_reason": null}]}
+
+data: {"id": "chatcmpl-sample0001", "model": "sample-model", "created": 1750000000, "object": "chat.completion.chunk", "choices": [{"index": 0, "delta": {"reasoning_content": "3, considering edge case 91 and its inte"}, "finish_reason": null}]}
+
+data: {"id": "chatcmpl-sample0001", "model": "sample-model", "created": 1750000000, "object": "chat.completion.chunk", "choices": [{"index": 0, "delta": {"reasoning_content": "raction with component 0, which differs "}, "finish_reason": null}]}
+
+data: {"id": "chatcmpl-sample0001", "model": "sample-model", "created": 1750000000, "object": "chat.completion.chunk", "choices": [{"index": 0, "delta": {"reasoning_content": "from the previous step in detail 39.\nSte"}, "finish_reason": null}]}
+
+data: {"id": "chatcmpl-sample0001", "model": "sample-model", "created": 1750000000, "object": "chat.completion.chunk", "choices": [{"index": 0, "delta": {"reasoning_content": "p 14: I am now working on profiling aspe"}, "finish_reason": null}]}
+
+data: {"id": "chatcmpl-sample0001", "model": "sample-model", "created": 1750000000, "object": "chat.completion.chunk", "choices": [{"index": 0, "delta": {"reasoning_content": "ct number 14, considering edge case 1 an"}, "finish_reason": null}]}
+
+data: {"id": "chatcmpl-sample0001", "model": "sample-model", "created": 1750000000, "object": "chat.completion.chunk", "choices": [{"index": 0, "delta": {"reasoning_content": "d its interaction with component 1, whic"}, "finish_reason": null}]}
+
+data: {"id": "chatcmpl-sample0001", "model": "sample-model", "created": 1750000000, "object": "chat.completion.chunk", "choices": [{"index": 0, "delta": {"reasoning_content": "h differs from the previous step in deta"}, "finish_reason": null}]}
+
+data: {"id": "chatcmpl-sample0001", "model": "sample-model", "created": 1750000000, "object": "chat.completion.chunk", "choices": [{"index": 0, "delta": {"reasoning_content": "il 42.\nStep 15: I am now working on cach"}, "finish_reason": null}]}
+
+data: {"id": "chatcmpl-sample0001", "model": "sample-model", "created": 1750000000, "object": "chat.completion.chunk", "choices": [{"index": 0, "delta": {"reasoning_content": "ing aspect number 15, considering edge c"}, "finish_reason": null}]}
+
+data: {"id": "chatcmpl-sample0001", "model": "sample-model", "created": 1750000000, "object": "chat.completion.chunk", "choices": [{"index": 0, "delta": {"reasoning_content": "ase 8 and its interaction with component"}, "finish_reason": null}]}
+
+data: {"id": "chatcmpl-sample0001", "model": "sample-model", "created": 1750000000, "object": "chat.completion.chunk", "choices": [{"index": 0, "delta": {"reasoning_content": " 2, which differs from the previous step"}, "finish_reason": null}]}
+
+data: {"id": "chatcmpl-sample0001", "model": "sample-model", "created": 1750000000, "object": "chat.completion.chunk", "choices": [{"index": 0, "delta": {"reasoning_content": " in detail 45.\nStep 16: I am now working"}, "finish_reason": null}]}
+
+data: {"id": "chatcmpl-sample0001", "model": "sample-model", "created": 1750000000, "object": "chat.completion.chunk", "choices": [{"index": 0, "delta": {"reasoning_content": " on logging aspect number 16, considerin"}, "finish_reason": null}]}
+
+data: {"id": "chatcmpl-sample0001", "model": "sample-model", "created": 1750000000, "object": "chat.completion.chunk", "choices": [{"index": 0, "delta": {"reasoning_content": "g edge case 15 and its interaction with "}, "finish_reason": null}]}
+
+data: {"id": "chatcmpl-sample0001", "model": "sample-model", "created": 1750000000, "object": "chat.completion.chunk", "choices": [{"index": 0, "delta": {"reasoning_content": "component 3, which differs from the prev"}, "finish_reason": null}]}
+
+data: {"id": "chatcmpl-sample0001", "model": "sample-model", "created": 1750000000, "object": "chat.completion.chunk", "choices": [{"index": 0, "delta": {"reasoning_content": "ious step in detail 48.\nStep 17: I am no"}, "finish_reason": null}]}
+
+data: {"id": "chatcmpl-sample0001", "model": "sample-model", "created": 1750000000, "object": "chat.completion.chunk", "choices": [{"index": 0, "delta": {"reasoning_content": "w working on routing aspect number 17, c"}, "finish_reason": null}]}
+
+data: {"id": "chatcmpl-sample0001", "model": "sample-model", "created": 1750000000, "object": "chat.completion.chunk", "choices": [{"index": 0, "delta": {"reasoning_content": "onsidering edge case 22 and its interact"}, "finish_reason": null}]}
+
+data: {"id": "chatcmpl-sample0001", "model": "sample-model", "created": 1750000000, "object": "chat.completion.chunk", "choices": [{"index": 0, "delta": {"reasoning_content": "ion with component 4, which differs from"}, "finish_reason": null}]}
+
+data: {"id": "chatcmpl-sample0001", "model": "sample-model", "created": 1750000000, "object": "chat.completion.chunk", "choices": [{"index": 0, "delta": {"reasoning_content": " the previous step in detail 51.\nStep 18"}, "finish_reason": null}]}
+
+data: {"id": "chatcmpl-sample0001", "model": "sample-model", "created": 1750000000, "object": "chat.completion.chunk", "choices": [{"index": 0, "delta": {"reasoning_content": ": I am now working on parsing aspect num"}, "finish_reason": null}]}
+
+data: {"id": "chatcmpl-sample0001", "model": "sample-model", "created": 1750000000, "object": "chat.completion.chunk", "choices": [{"index": 0, "delta": {"reasoning_content": "ber 18, considering edge case 29 and its"}, "finish_reason": null}]}
+
+data: {"id": "chatcmpl-sample0001", "model": "sample-model", "created": 1750000000, "object": "chat.completion.chunk", "choices": [{"index": 0, "delta": {"reasoning_content": " interaction with component 5, which dif"}, "finish_reason": null}]}
+
+data: {"id": "chatcmpl-sample0001", "model": "sample-model", "created": 1750000000, "object": "chat.completion.chunk", "choices": [{"index": 0, "delta": {"reasoning_content": "fers from the previous step in detail 54"}, "finish_reason": null}]}
+
+data: {"id": "chatcmpl-sample0001", "model": "sample-model", "created": 1750000000, "object": "chat.completion.chunk", "choices": [{"index": 0, "delta": {"reasoning_content": ".\nStep 19: I am now working on streaming"}, "finish_reason": null}]}
+
+data: {"id": "chatcmpl-sample0001", "model": "sample-model", "created": 1750000000, "object": "chat.completion.chunk", "choices": [{"index": 0, "delta": {"reasoning_content": " aspect number 19, considering edge case"}, "finish_reason": null}]}
+
+data: {"id": "chatcmpl-sample0001", "model": "sample-model", "created": 1750000000, "object": "chat.completion.chunk", "choices": [{"index": 0, "delta": {"reasoning_content": " 36 and its interaction with component 6"}, "finish_reason": null}]}
+
+data: {"id": "chatcmpl-sample0001", "model": "sample-model", "created": 1750000000, "object": "chat.completion.chunk", "choices": [{"index": 0, "delta": {"reasoning_content": ", which differs from the previous step i"}, "finish_reason": null}]}
+
+data: {"id": "chatcmpl-sample0001", "model": "sample-model", "created": 1750000000, "object": "chat.completion.chunk", "choices": [{"index": 0, "delta": {"reasoning_content": "n detail 57.\nStep 20: I am now working o"}, "finish_reason": null}]}
+
+data: {"id": "chatcmpl-sample0001", "model": "sample-model", "created": 1750000000, "object": "chat.completion.chunk", "choices": [{"index": 0, "delta": {"reasoning_content": "n parsing aspect number 20, considering "}, "finish_reason": null}]}
+
+data: {"id": "chatcmpl-sample0001", "model": "sample-model", "created": 1750000000, "object": "chat.completion.chunk", "choices": [{"index": 0, "delta": {"reasoning_content": "edge case 43 and its interaction with co"}, "finish_reason": null}]}
+
+data: {"id": "chatcmpl-sample0001", "model": "sample-model", "created": 1750000000, "object": "chat.completion.chunk", "choices": [{"index": 0, "delta": {"reasoning_content": "mponent 7, which differs from the previo"}, "finish_reason": null}]}
+
+data: {"id": "chatcmpl-sample0001", "model": "sample-model", "created": 1750000000, "object": "chat.completion.chunk", "choices": [{"index": 0, "delta": {"reasoning_content": "us step in detail 60.\nStep 21: I am now "}, "finish_reason": null}]}
+
+data: {"id": "chatcmpl-sample0001", "model": "sample-model", "created": 1750000000, "object": "chat.completion.chunk", "choices": [{"index": 0, "delta": {"reasoning_content": "working on planning aspect number 21, co"}, "finish_reason": null}]}
+
+data: {"id": "chatcmpl-sample0001", "model": "sample-model", "created": 1750000000, "object": "chat.completion.chunk", "choices": [{"index": 0, "delta": {"reasoning_content": "nsidering edge case 50 and its interacti"}, "finish_reason": null}]}
+
+data: {"id": "chatcmpl-sample0001", "model": "sample-model", "created": 1750000000, "object": "chat.completion.chunk", "choices": [{"index": 0, "delta": {"reasoning_content": "on with component 8, which differs from "}, "finish_reason": null}]}
+
+data: {"id": "chatcmpl-sample0001", "model": "sample-model", "created": 1750000000, "object": "chat.completion.chunk", "choices": [{"index": 0, "delta": {"reasoning_content": "the previous step in detail 63.\nStep 22:"}, "finish_reason": null}]}
+
+data: {"id": "chatcmpl-sample0001", "model": "sample-model", "created": 1750000000, "object": "chat.completion.chunk", "choices": [{"index": 0, "delta": {"reasoning_content": " I am now working on testing aspect numb"}, "finish_reason": null}]}
+
+data: {"id": "chatcmpl-sample0001", "model": "sample-model", "created": 1750000000, "object": "chat.completion.chunk", "choices": [{"index": 0, "delta": {"reasoning_content": "er 22, considering edge case 57 and its "}, "finish_reason": null}]}
+
+data: {"id": "chatcmpl-sample0001", "model": "sample-model", "created": 1750000000, "object": "chat.completion.chunk", "choices": [{"index": 0, "delta": {"reasoning_content": "interaction with component 9, which diff"}, "finish_reason": null}]}
+
+data: {"id": "chatcmpl-sample0001", "model": "sample-model", "created": 1750000000, "object": "chat.completion.chunk", "choices": [{"index": 0, "delta": {"reasoning_content": "ers from the previous step in detail 66."}, "finish_reason": null}]}
+
+data: {"id": "chatcmpl-sample0001", "model": "sample-model", "created": 1750000000, "object": "chat.completion.chunk", "choices": [{"index": 0, "delta": {"reasoning_content": "\nStep 23: I am now working on refactorin"}, "finish_reason": null}]}
+
+data: {"id": "chatcmpl-sample0001", "model": "sample-model", "created": 1750000000, "object": "chat.completion.chunk", "choices": [{"index": 0, "delta": {"reasoning_content": "g aspect number 23, considering edge cas"}, "finish_reason": null}]}
+
+data: {"id": "chatcmpl-sample0001", "model": "sample-model", "created": 1750000000, "object": "chat.completion.chunk", "choices": [{"index": 0, "delta": {"reasoning_content": "e 64 and its interaction with component "}, "finish_reason": null}]}
+
+data: {"id": "chatcmpl-sample0001", "model": "sample-model", "created": 1750000000, "object": "chat.completion.chunk", "choices": [{"index": 0, "delta": {"reasoning_content": "10, which differs from the previous step"}, "finish_reason": null}]}
+
+data: {"id": "chatcmpl-sample0001", "model": "sample-model", "created": 1750000000, "object": "chat.completion.chunk", "choices": [{"index": 0, "delta": {"reasoning_content": " in detail 69.\nI have already considered"}, "finish_reason": null}]}
+
+data: {"id": "chatcmpl-sample0001", "model": "sample-model", "created": 1750000000, "object": "chat.completion.chunk", "choices": [{"index": 0, "delta": {"reasoning_content": " this exact point and there is nothing m"}, "finish_reason": null}]}
+
+data: {"id": "chatcmpl-sample0001", "model": "sample-model", "created": 1750000000, "object": "chat.completion.chunk", "choices": [{"index": 0, "delta": {"reasoning_content": "ore to add on this matter at all I have "}, "finish_reason": null}]}
+
+data: {"id": "chatcmpl-sample0001", "model": "sample-model", "created": 1750000000, "object": "chat.completion.chunk", "choices": [{"index": 0, "delta": {"reasoning_content": "already considered this exact point and "}, "finish_reason": null}]}
+
+data: {"id": "chatcmpl-sample0001", "model": "sample-model", "created": 1750000000, "object": "chat.completion.chunk", "choices": [{"index": 0, "delta": {"reasoning_content": "there is nothing more to add on this mat"}, "finish_reason": null}]}
+
+data: {"id": "chatcmpl-sample0001", "model": "sample-model", "created": 1750000000, "object": "chat.completion.chunk", "choices": [{"index": 0, "delta": {"reasoning_content": "ter at all I have already considered thi"}, "finish_reason": null}]}
+
+data: {"id": "chatcmpl-sample0001", "model": "sample-model", "created": 1750000000, "object": "chat.completion.chunk", "choices": [{"index": 0, "delta": {"reasoning_content": "s exact point and there is nothing more "}, "finish_reason": null}]}
+
+data: {"id": "chatcmpl-sample0001", "model": "sample-model", "created": 1750000000, "object": "chat.completion.chunk", "choices": [{"index": 0, "delta": {"reasoning_content": "to add on this matter at all I have alre"}, "finish_reason": null}]}
+
+data: {"id": "chatcmpl-sample0001", "model": "sample-model", "created": 1750000000, "object": "chat.completion.chunk", "choices": [{"index": 0, "delta": {"reasoning_content": "ady considered this exact point and ther"}, "finish_reason": null}]}
+
+data: {"id": "chatcmpl-sample0001", "model": "sample-model", "created": 1750000000, "object": "chat.completion.chunk", "choices": [{"index": 0, "delta": {"reasoning_content": "e is nothing more to add on this matter "}, "finish_reason": null}]}
+
+data: {"id": "chatcmpl-sample0001", "model": "sample-model", "created": 1750000000, "object": "chat.completion.chunk", "choices": [{"index": 0, "delta": {"reasoning_content": "at all I have already considered this ex"}, "finish_reason": null}]}
+
+data: {"id": "chatcmpl-sample0001", "model": "sample-model", "created": 1750000000, "object": "chat.completion.chunk", "choices": [{"index": 0, "delta": {"reasoning_content": "act point and there is nothing more to a"}, "finish_reason": null}]}
+
+data: {"id": "chatcmpl-sample0001", "model": "sample-model", "created": 1750000000, "object": "chat.completion.chunk", "choices": [{"index": 0, "delta": {"reasoning_content": "dd on this matter at all I have already "}, "finish_reason": null}]}
+
+data: {"id": "chatcmpl-sample0001", "model": "sample-model", "created": 1750000000, "object": "chat.completion.chunk", "choices": [{"index": 0, "delta": {"reasoning_content": "considered this exact point and there is"}, "finish_reason": null}]}
+
+data: {"id": "chatcmpl-sample0001", "model": "sample-model", "created": 1750000000, "object": "chat.completion.chunk", "choices": [{"index": 0, "delta": {"reasoning_content": " nothing more to add on this matter at a"}, "finish_reason": null}]}
+
+data: {"id": "chatcmpl-sample0001", "model": "sample-model", "created": 1750000000, "object": "chat.completion.chunk", "choices": [{"index": 0, "delta": {"reasoning_content": "ll I have already considered this exact "}, "finish_reason": null}]}
+
+data: {"id": "chatcmpl-sample0001", "model": "sample-model", "created": 1750000000, "object": "chat.completion.chunk", "choices": [{"index": 0, "delta": {"reasoning_content": "point and there is nothing more to add o"}, "finish_reason": null}]}
+
+data: {"id": "chatcmpl-sample0001", "model": "sample-model", "created": 1750000000, "object": "chat.completion.chunk", "choices": [{"index": 0, "delta": {"reasoning_content": "n this matter at all I have already cons"}, "finish_reason": null}]}
+
+data: {"id": "chatcmpl-sample0001", "model": "sample-model", "created": 1750000000, "object": "chat.completion.chunk", "choices": [{"index": 0, "delta": {"reasoning_content": "idered this exact point and there is not"}, "finish_reason": null}]}
+
+data: {"id": "chatcmpl-sample0001", "model": "sample-model", "created": 1750000000, "object": "chat.completion.chunk", "choices": [{"index": 0, "delta": {"reasoning_content": "hing more to add on this matter at all I"}, "finish_reason": null}]}
+
+data: {"id": "chatcmpl-sample0001", "model": "sample-model", "created": 1750000000, "object": "chat.completion.chunk", "choices": [{"index": 0, "delta": {"reasoning_content": " have already considered this exact poin"}, "finish_reason": null}]}
+
+data: {"id": "chatcmpl-sample0001", "model": "sample-model", "created": 1750000000, "object": "chat.completion.chunk", "choices": [{"index": 0, "delta": {"reasoning_content": "t and there is nothing more to add on th"}, "finish_reason": null}]}
+
+data: {"id": "chatcmpl-sample0001", "model": "sample-model", "created": 1750000000, "object": "chat.completion.chunk", "choices": [{"index": 0, "delta": {"reasoning_content": "is matter at all I have already consider"}, "finish_reason": null}]}
+
+data: {"id": "chatcmpl-sample0001", "model": "sample-model", "created": 1750000000, "object": "chat.completion.chunk", "choices": [{"index": 0, "delta": {"reasoning_content": "ed this exact point and there is nothing"}, "finish_reason": null}]}
+
+data: {"id": "chatcmpl-sample0001", "model": "sample-model", "created": 1750000000, "object": "chat.completion.chunk", "choices": [{"index": 0, "delta": {"reasoning_content": " more to add on this matter at all I hav"}, "finish_reason": null}]}
+
+data: {"id": "chatcmpl-sample0001", "model": "sample-model", "created": 1750000000, "object": "chat.completion.chunk", "choices": [{"index": 0, "delta": {"reasoning_content": "e already considered this exact point an"}, "finish_reason": null}]}
+
+data: {"id": "chatcmpl-sample0001", "model": "sample-model", "created": 1750000000, "object": "chat.completion.chunk", "choices": [{"index": 0, "delta": {"reasoning_content": "d there is nothing more to add on this m"}, "finish_reason": null}]}
+
+data: {"id": "chatcmpl-sample0001", "model": "sample-model", "created": 1750000000, "object": "chat.completion.chunk", "choices": [{"index": 0, "delta": {"reasoning_content": "atter at all I have already considered t"}, "finish_reason": null}]}
+
+data: {"id": "chatcmpl-sample0001", "model": "sample-model", "created": 1750000000, "object": "chat.completion.chunk", "choices": [{"index": 0, "delta": {"reasoning_content": "his exact point and there is nothing mor"}, "finish_reason": null}]}
+
+data: {"id": "chatcmpl-sample0001", "model": "sample-model", "created": 1750000000, "object": "chat.completion.chunk", "choices": [{"index": 0, "delta": {"reasoning_content": "e to add on this matter at all I have al"}, "finish_reason": null}]}
+
+data: {"id": "chatcmpl-sample0001", "model": "sample-model", "created": 1750000000, "object": "chat.completion.chunk", "choices": [{"index": 0, "delta": {"reasoning_content": "ready considered this exact point and th"}, "finish_reason": null}]}
+
+data: {"id": "chatcmpl-sample0001", "model": "sample-model", "created": 1750000000, "object": "chat.completion.chunk", "choices": [{"index": 0, "delta": {"reasoning_content": "ere is nothing more to add on this matte"}, "finish_reason": null}]}
+
+data: {"id": "chatcmpl-sample0001", "model": "sample-model", "created": 1750000000, "object": "chat.completion.chunk", "choices": [{"index": 0, "delta": {"reasoning_content": "r at all I have already considered this "}, "finish_reason": null}]}
+
+data: {"id": "chatcmpl-sample0001", "model": "sample-model", "created": 1750000000, "object": "chat.completion.chunk", "choices": [{"index": 0, "delta": {"reasoning_content": "exact point and there is nothing more to"}, "finish_reason": null}]}
+
+data: {"id": "chatcmpl-sample0001", "model": "sample-model", "created": 1750000000, "object": "chat.completion.chunk", "choices": [{"index": 0, "delta": {"reasoning_content": " add on this matter at all I have alread"}, "finish_reason": null}]}
+
+data: {"id": "chatcmpl-sample0001", "model": "sample-model", "created": 1750000000, "object": "chat.completion.chunk", "choices": [{"index": 0, "delta": {"reasoning_content": "y considered this exact point and there "}, "finish_reason": null}]}
+
+data: {"id": "chatcmpl-sample0001", "model": "sample-model", "created": 1750000000, "object": "chat.completion.chunk", "choices": [{"index": 0, "delta": {"reasoning_content": "is nothing more to add on this matter at"}, "finish_reason": null}]}
+
+data: {"id": "chatcmpl-sample0001", "model": "sample-model", "created": 1750000000, "object": "chat.completion.chunk", "choices": [{"index": 0, "delta": {"reasoning_content": " all I have already considered this exac"}, "finish_reason": null}]}
+
+data: {"id": "chatcmpl-sample0001", "model": "sample-model", "created": 1750000000, "object": "chat.completion.chunk", "choices": [{"index": 0, "delta": {"reasoning_content": "t point and there is nothing more to add"}, "finish_reason": null}]}
+
+data: {"id": "chatcmpl-sample0001", "model": "sample-model", "created": 1750000000, "object": "chat.completion.chunk", "choices": [{"index": 0, "delta": {"reasoning_content": " on this matter at all I have already co"}, "finish_reason": null}]}
+
+data: {"id": "chatcmpl-sample0001", "model": "sample-model", "created": 1750000000, "object": "chat.completion.chunk", "choices": [{"index": 0, "delta": {"reasoning_content": "nsidered this exact point and there is n"}, "finish_reason": null}]}
+
+data: {"id": "chatcmpl-sample0001", "model": "sample-model", "created": 1750000000, "object": "chat.completion.chunk", "choices": [{"index": 0, "delta": {"reasoning_content": "othing more to add on this matter at all"}, "finish_reason": null}]}
+
+data: {"id": "chatcmpl-sample0001", "model": "sample-model", "created": 1750000000, "object": "chat.completion.chunk", "choices": [{"index": 0, "delta": {"reasoning_content": " I have already considered this exact po"}, "finish_reason": null}]}
+
+data: {"id": "chatcmpl-sample0001", "model": "sample-model", "created": 1750000000, "object": "chat.completion.chunk", "choices": [{"index": 0, "delta": {"reasoning_content": "int and there is nothing more to add on "}, "finish_reason": null}]}
+
+data: {"id": "chatcmpl-sample0001", "model": "sample-model", "created": 1750000000, "object": "chat.completion.chunk", "choices": [{"index": 0, "delta": {"reasoning_content": "this matter at all I have already consid"}, "finish_reason": null}]}
+
+data: {"id": "chatcmpl-sample0001", "model": "sample-model", "created": 1750000000, "object": "chat.completion.chunk", "choices": [{"index": 0, "delta": {"reasoning_content": "ered this exact point and there is nothi"}, "finish_reason": null}]}
+
+data: {"id": "chatcmpl-sample0001", "model": "sample-model", "created": 1750000000, "object": "chat.completion.chunk", "choices": [{"index": 0, "delta": {"reasoning_content": "ng more to add on this matter at all I h"}, "finish_reason": null}]}
+
+data: {"id": "chatcmpl-sample0001", "model": "sample-model", "created": 1750000000, "object": "chat.completion.chunk", "choices": [{"index": 0, "delta": {"reasoning_content": "ave already considered this exact point "}, "finish_reason": null}]}
+
+data: {"id": "chatcmpl-sample0001", "model": "sample-model", "created": 1750000000, "object": "chat.completion.chunk", "choices": [{"index": 0, "delta": {"reasoning_content": "and there is nothing more to add on this"}, "finish_reason": null}]}
+
+data: {"id": "chatcmpl-sample0001", "model": "sample-model", "created": 1750000000, "object": "chat.completion.chunk", "choices": [{"index": 0, "delta": {"reasoning_content": " matter at all I have already considered"}, "finish_reason": null}]}
+
+data: {"id": "chatcmpl-sample0001", "model": "sample-model", "created": 1750000000, "object": "chat.completion.chunk", "choices": [{"index": 0, "delta": {"reasoning_content": " this exact point and there is nothing m"}, "finish_reason": null}]}
+
+data: {"id": "chatcmpl-sample0001", "model": "sample-model", "created": 1750000000, "object": "chat.completion.chunk", "choices": [{"index": 0, "delta": {"reasoning_content": "ore to add on this matter at all I have "}, "finish_reason": null}]}
+
+data: {"id": "chatcmpl-sample0001", "model": "sample-model", "created": 1750000000, "object": "chat.completion.chunk", "choices": [{"index": 0, "delta": {"reasoning_content": "already considered this exact point and "}, "finish_reason": null}]}
+
+data: {"id": "chatcmpl-sample0001", "model": "sample-model", "created": 1750000000, "object": "chat.completion.chunk", "choices": [{"index": 0, "delta": {"reasoning_content": "there is nothing more to add on this mat"}, "finish_reason": null}]}
+
+data: {"id": "chatcmpl-sample0001", "model": "sample-model", "created": 1750000000, "object": "chat.completion.chunk", "choices": [{"index": 0, "delta": {"reasoning_content": "ter at all I have already considered thi"}, "finish_reason": null}]}
+
+data: {"id": "chatcmpl-sample0001", "model": "sample-model", "created": 1750000000, "object": "chat.completion.chunk", "choices": [{"index": 0, "delta": {"reasoning_content": "s exact point and there is nothing more "}, "finish_reason": null}]}
+
+data: {"id": "chatcmpl-sample0001", "model": "sample-model", "created": 1750000000, "object": "chat.completion.chunk", "choices": [{"index": 0, "delta": {"reasoning_content": "to add on this matter at all I have alre"}, "finish_reason": null}]}
+
+data: {"id": "chatcmpl-sample0001", "model": "sample-model", "created": 1750000000, "object": "chat.completion.chunk", "choices": [{"index": 0, "delta": {"reasoning_content": "ady considered this exact point and ther"}, "finish_reason": null}]}
+
+data: {"id": "chatcmpl-sample0001", "model": "sample-model", "created": 1750000000, "object": "chat.completion.chunk", "choices": [{"index": 0, "delta": {"reasoning_content": "e is nothing more to add on this matter "}, "finish_reason": null}]}
+
+data: {"id": "chatcmpl-sample0001", "model": "sample-model", "created": 1750000000, "object": "chat.completion.chunk", "choices": [{"index": 0, "delta": {"reasoning_content": "at all I have already considered this ex"}, "finish_reason": null}]}
+
+data: {"id": "chatcmpl-sample0001", "model": "sample-model", "created": 1750000000, "object": "chat.completion.chunk", "choices": [{"index": 0, "delta": {"reasoning_content": "act point and there is nothing more to a"}, "finish_reason": null}]}
+
+data: {"id": "chatcmpl-sample0001", "model": "sample-model", "created": 1750000000, "object": "chat.completion.chunk", "choices": [{"index": 0, "delta": {"reasoning_content": "dd on this matter at all I have already "}, "finish_reason": null}]}
+
+data: {"id": "chatcmpl-sample0001", "model": "sample-model", "created": 1750000000, "object": "chat.completion.chunk", "choices": [{"index": 0, "delta": {"reasoning_content": "considered this exact point and there is"}, "finish_reason": null}]}
+
+data: {"id": "chatcmpl-sample0001", "model": "sample-model", "created": 1750000000, "object": "chat.completion.chunk", "choices": [{"index": 0, "delta": {"reasoning_content": " nothing more to add on this matter at a"}, "finish_reason": null}]}
+
+data: {"id": "chatcmpl-sample0001", "model": "sample-model", "created": 1750000000, "object": "chat.completion.chunk", "choices": [{"index": 0, "delta": {"reasoning_content": "ll I have already considered this exact "}, "finish_reason": null}]}
+
+data: {"id": "chatcmpl-sample0001", "model": "sample-model", "created": 1750000000, "object": "chat.completion.chunk", "choices": [{"index": 0, "delta": {"reasoning_content": "point and there is nothing more to add o"}, "finish_reason": null}]}
+
+data: {"id": "chatcmpl-sample0001", "model": "sample-model", "created": 1750000000, "object": "chat.completion.chunk", "choices": [{"index": 0, "delta": {"reasoning_content": "n this matter at all I have already cons"}, "finish_reason": null}]}
+
+data: {"id": "chatcmpl-sample0001", "model": "sample-model", "created": 1750000000, "object": "chat.completion.chunk", "choices": [{"index": 0, "delta": {"reasoning_content": "idered this exact point and there is not"}, "finish_reason": null}]}
+
+data: {"id": "chatcmpl-sample0001", "model": "sample-model", "created": 1750000000, "object": "chat.completion.chunk", "choices": [{"index": 0, "delta": {"reasoning_content": "hing more to add on this matter at all I"}, "finish_reason": null}]}
+
+data: {"id": "chatcmpl-sample0001", "model": "sample-model", "created": 1750000000, "object": "chat.completion.chunk", "choices": [{"index": 0, "delta": {"reasoning_content": " have already considered this exact poin"}, "finish_reason": null}]}
+
+data: {"id": "chatcmpl-sample0001", "model": "sample-model", "created": 1750000000, "object": "chat.completion.chunk", "choices": [{"index": 0, "delta": {"reasoning_content": "t and there is nothing more to add on th"}, "finish_reason": null}]}
+
+data: {"id": "chatcmpl-sample0001", "model": "sample-model", "created": 1750000000, "object": "chat.completion.chunk", "choices": [{"index": 0, "delta": {"reasoning_content": "is matter at all I have already consider"}, "finish_reason": null}]}
+
+data: {"id": "chatcmpl-sample0001", "model": "sample-model", "created": 1750000000, "object": "chat.completion.chunk", "choices": [{"index": 0, "delta": {"reasoning_content": "ed this exact point and there is nothing"}, "finish_reason": null}]}
+
+data: {"id": "chatcmpl-sample0001", "model": "sample-model", "created": 1750000000, "object": "chat.completion.chunk", "choices": [{"index": 0, "delta": {"reasoning_content": " more to add on this matter at all "}, "finish_reason": null}]}
+
+data: [DONE]
+

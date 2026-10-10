@@ -1,0 +1,24 @@
+# Standalone example: put the proxy in front of an LLM server that listens
+# on the host at 127.0.0.1:8080 (llama.cpp / llama-swap / vLLM / ...).
+#
+#   docker compose up -d --build
+#   curl http://localhost:9293/health
+#
+# Point your LLM client at http://localhost:9293 instead of :8080.
+services:
+  llm-proxy-loop-detector:
+    build: .
+    container_name: llm-proxy-loop-detector
+    ports:
+      - "9293:9293"
+    volumes:
+      - ./logs:/app/logs
+    restart: unless-stopped
+    command: >
+      python proxy.py
+      --listen 0.0.0.0:9293
+      --upstream http://host.docker.internal:8080
+      --logdir /app/logs
+      --warmup-chars 2000
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
